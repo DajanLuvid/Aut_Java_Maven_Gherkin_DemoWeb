@@ -36,12 +36,12 @@ Feature: Swag Labs Page
 
 - Clone this repository
 - Install dependencies with Maven
-
+```bash
 mvn clean install
-
+```
 - Run the tests
-
+```bash
 mvn test
-
+```
 
 This example demonstrates how to combine BDD with Gherkin and the POM design pattern to keep web automation projects scalable and maintainable.
