@@ -13,7 +13,7 @@ This project is an example of web automation using **Java** and the **Page Objec
 
 ```gherkin
 Feature: Swag Labs Page
-  AS a user I WANT to log in with my credentials SO THAT I can make purchases
+AS a user I WANT to log in with my credentials SO THAT I can make purchases
 
   Scenario Outline: Reach the shopping cart
     Given The user is on the Swag Labs Home
@@ -24,6 +24,12 @@ Feature: Swag Labs Page
       And Deselect the product "<product3>"
       And Click on the option "<page2name>"
     Then They access the page with the title "<page2title>"
+
+    Examples:
+      | product1               | product2                  | product3                 | page2name | page2title |
+      | Sauce Labs Backpack     | Sauce Labs Bike Light      | Sauce Labs Backpack       | cart      | Your Cart  |
+      | Sauce Labs Bolt T-Shirt | Sauce Labs Fleece Jacket   | Sauce Labs Fleece Jacket  | cart      | Your Cart  |
+      | Sauce Labs Backpack     | Sauce Labs Bike Light      | Sauce Labs Bike Light     | cart      | Your Cart  |
 ```
 
 ## Project Structure
